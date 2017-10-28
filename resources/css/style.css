@@ -18,8 +18,8 @@
 }
 
 .logo h1 {
-    font-size: 14px;
-    margin-left: 10px;
+  font-size: 14px;
+  margin-left: 10px;
 }
 
 .navigate {
@@ -28,6 +28,69 @@
 
 .navigate a {
   color: black;
-  padding: 0px 10px;
 }
 /* body containers */
+
+.content {
+  display: flex;
+  margin: 10px 10px 40px 10px;
+  align-items: stretch;
+  padding-top: 20px;
+  justify-content: space-between;
+}
+
+.large {
+  width: 630px;
+}
+
+.medium {
+  width: 300px;
+}
+
+.small {
+  width: 240px;
+}
+
+/* images */
+.image-text {
+  display: flex;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  height: 300px;
+  text-align: center;
+}
+/* replace ../ with /My_Times/resources when pushing to github */
+#main-story {
+  font-size: 40px;
+  text-align: left;
+  background-image: url("../media/img-story-main.png");
+}
+
+#pic1 {
+  background-image: url("../media/img-story-2.png");
+}
+
+#pic2 {
+  background-image: url("../media/img-story-3.png");
+}
+
+#pic3 {
+  background-image: url("../media/img-story-1.png");
+}
+
+/* stories */
+
+.stories {
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+  display: flex;
+}
+
+.medium .stories {
+  display: flex;
+  align-content: stretch;
+  flex-wrap: wrap;
+}
