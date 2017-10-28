@@ -1,0 +1,33 @@
+/* header */
+.header {
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  padding: 10px 30px;
+  border-bottom: 1px solid black;
+}
+
+.logo {
+  color: MediumAquamarine;
+  display: flex;
+  align-items: center;
+}
+
+.logo h1 {
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.navigate {
+  padding: 20px;
+}
+
+.navigate a {
+  color: black;
+  padding: 0px 10px;
+}
+/* body containers */
