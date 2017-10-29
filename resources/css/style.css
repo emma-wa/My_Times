@@ -1,20 +1,27 @@
 /* header */
 .header {
-  align-content: center;
+  display: flex;
   align-items: center;
-  justify-content: space-between;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  border-bottom: 1px solid black;
+  background-color: white;
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
-  display: flex;
+  top: 0px;
+  /* missing on codecademy  */
+  justify-content: space-between;
   padding: 10px 30px;
-  border-bottom: 1px solid black;
 }
 
 .logo {
-  color: MediumAquamarine;
   display: flex;
+  color: MediumAquamarine;
+  flex-grow: 1;
   align-items: center;
+  border: 1px solid black;
 }
 
 .logo h1 {
@@ -23,49 +30,71 @@
 }
 
 .navigate {
+  display: flex;
   padding: 20px;
+  margin-right: 50px;
+  border: 1px solid black;
 }
 
 .navigate a {
   color: black;
+  padding: 10px;
+  display: inline-block;
 }
 /* body containers */
 
 .content {
   display: flex;
-  margin: 10px 10px 40px 10px;
-  align-items: stretch;
-  padding-top: 20px;
+  margin: 0px 20px 40px 20px;
   justify-content: space-between;
+  position: relative;
+  top: 130px;
+  border: 1px solid black;
 }
 
 .large {
   width: 630px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
 }
 
 .medium {
   width: 300px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
 }
 
 .small {
   width: 240px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
 }
 
 /* images */
-.image-text {
-  display: flex;
+.pic {
+  height: 300px;
+  border: 1px solid red;
+  text-align: center;
+}
+
+.pic h2 {
   font-family: Georgia;
   font-weight: bold;
   font-size: 30px;
   color: white;
-  height: 300px;
-  text-align: center;
+  margin: 0;
 }
 /* replace ../ with /My_Times/resources when pushing to github */
-#main-story {
-  font-size: 40px;
-  text-align: left;
+#main-pic {
   background-image: url("../media/img-story-main.png");
+  text-align: left;
+}
+
+#main-pic h2 {
+  font-size: 40px;
 }
 
 #pic1 {
@@ -81,16 +110,19 @@
 }
 
 /* stories */
-
 .stories {
+  display: flex;
+}
+.text {
   font-family: Georgia;
   font-size: 17px;
   color: black;
-  display: flex;
 }
 
-.medium .stories {
-  display: flex;
-  align-content: stretch;
-  flex-wrap: wrap;
+.text h3 {
+  font-size: 20px;
+}
+
+.story-1 {
+  margin-right: 30px;
 }
